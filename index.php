@@ -14,7 +14,6 @@
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 body {font-family: "Open Sans"}
 #more {display: none; }
-.div .p .a {display: inline}
 </style>
 <body class="w3-light-grey">
 
@@ -106,7 +105,7 @@ and is wrapped around the whole page content, except for the footer in this exam
               Bạn qua thư, họ biết nhau qua những câu chữ, những dòng tin nhắn, hiểu nhau bằng lối viết, mến nhau bằng những câu chuyện có sự đồng cảm. Bạn qua thư, họ tự tưởng tượng hình ảnh của đối phương bằng khối óc sáng tạo của mình. Họ gửi gắm, trút hết lòng tin của mình cho một kẻ lạ mặt nào đó chưa từng tiếp xúc, chưa từng nghe thấy giọng nhau. Mọi thứ luôn tốt đẹp khi làm bạn qua thư.       
               Và rồi một ngày nọ, tin nhắn không đến nữa. Tình bạn của họ chấm dứt, một người bạn ảo, một người bạn lạ mặt đang giữ hàng đống những bí mật của đối phương, biến mất, không chút vết tích. Chẳng có một cuộc cãi vã nào, chỉ đơn giản là biến mất. Kí ức của họ về nhau vẫn luôn đẹp, vẫn luôn ẩn chứa thứ gì đó mới lạ mà đối phương luôn muốn khai thác, kiếm tìm. Những thứ mới mẻ luôn mang một sức hút kì lạ như thế..           
               Cô mở mắt. Ngoài trời giờ chỉ còn là một mảng tối đen như mực. Ánh đèn vàng của khu phố hắt ngược vào tấm kính cửa sổ, cô thấy Kiki đang chìm vào giấc mơ của riêng nó. Đôi tình nhân đã đi từ lúc nào. Ly trà trên tay cô lạnh ngắt. Bông hoa nhài nhỏ đã chìm xuống đáy ly, teo lại thành một thứ nhũn nhũn xỉn màu. Trong khoảng tối, chiếc điện thoại đặt trên bàn của cô sáng lên: “Chào cậu! Mình rất thích những gì cậu viết!”</span>
-              <a href="#" onclick="myFunction()" id="myBtn">Read more</a>
+              <a href="#" onclick="Button_readmore()" id="btn-content">Read more</a>
             </p>
             
             
@@ -395,10 +394,10 @@ function likeFunction(x) {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- button readmore/readless -->
 <script>
-  function myFunction() {
+  function Button_readmore() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
+    var btnText = document.getElementById("btn-content");
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
